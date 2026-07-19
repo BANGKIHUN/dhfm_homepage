@@ -336,6 +336,35 @@ body { padding-top: var(--header-h); }
 /* ══════ 10. T3 사업분야 ══════ */
 /* 사업분야 페이지는 공용 .spec-figure 패턴만 사용 — 전용 규칙 없음 */
 
+/* ══════ 11. T4 문서 ══════ */
+.doc { max-width: var(--measure); }
+.doc h2 { font-size: 1.25rem; margin-top: 40px; padding-bottom: 10px;
+          border-bottom: 2px solid var(--cast); }
+.doc h2:first-child { margin-top: 0; }
+.doc h3 { font-size: 1rem; margin-top: 28px; color: var(--iron); }
+.doc p  { margin-top: 14px; }
+.doc ul, .doc ol { margin: 14px 0 0 20px; }
+.doc li { margin-top: 7px; }
+.doc strong { font-weight: 600; }
+
+/* ══════ 12. T5 데이터 ══════ */
+.history { border-top: 1px solid var(--machined); margin-top: 24px; }
+.history__row { display: grid; grid-template-columns: 120px 1fr; gap: 24px;
+                padding: 18px 0; border-bottom: 1px solid var(--machined); }
+.history__year { font-family: var(--font-data); font-weight: 600; font-size: 1.05rem;
+                 font-variant-numeric: tabular-nums; }
+@media (max-width: 700px) { .history__row { grid-template-columns: 1fr; gap: 4px; } }
+
+.plate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;
+              margin-top: 24px; }
+.cert-figure img { background: var(--white); padding: 20px; aspect-ratio: 3/4; object-fit: contain; }
+
+/* 조직도 — 트리형 구조 유지, 명판 톤만 적용 */
+.org-chart { display: flex; flex-direction: column; align-items: center; margin-top: 24px; }
+.org-box { padding: 14px 28px; text-align: center; font-weight: 600; }
+.org-connector { width: 1px; height: 28px; background: var(--machined); }
+.org-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 28px; }
+
 /* ══════ 17. 접근성 ══════ */
 :focus-visible {
   outline: 2px solid var(--oxide);
