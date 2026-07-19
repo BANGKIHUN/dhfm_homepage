@@ -1585,6 +1585,7 @@ document.addEventListener('keydown', e => {
   const lb = document.getElementById('lightbox');
   if (!lb.classList.contains('open')) return;
   if (e.key === 'Escape') closeLightbox({target: lb});
+  if (lb.classList.contains('lightbox--single')) return; // 카탈로그는 단일 이미지 — 좌우 이동 없음
   if (e.key === 'ArrowLeft')  lightboxMove(-1, {stopPropagation:()=>{}});
   if (e.key === 'ArrowRight') lightboxMove(1,  {stopPropagation:()=>{}});
 });
