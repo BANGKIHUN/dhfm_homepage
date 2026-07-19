@@ -1069,19 +1069,23 @@
       <div class="rule"></div>
     </div>
   </div>
-  <div class="content-wrap">
-    <div class="sec-title">온라인 상담</div>
-    <div class="consultation-form">
-      <div class="cf-row">
-        <div class="cf-group"><label class="cf-label">성함 *</label><input class="cf-input" id="c-name" name="name" placeholder="성함을 입력해 주세요"></div>
-        <div class="cf-group"><label class="cf-label">연락처 *</label><input class="cf-input" id="c-phone" name="phone" placeholder="010-0000-0000"></div>
+  <div class="section container">
+    <div class="plate" style="max-width:760px;margin-inline:auto">
+      <div class="plate__band"><span>Online Consultation</span><span>온라인 상담</span></div>
+      <div class="plate__body">
+        <div class="consultation-form">
+          <div class="cf-row">
+            <div class="cf-group"><label class="cf-label">성함 <span class="cf-req">*</span></label><input class="cf-input" id="c-name" name="name" placeholder="성함을 입력해 주세요"></div>
+            <div class="cf-group"><label class="cf-label">연락처 <span class="cf-req">*</span></label><input class="cf-input" id="c-phone" name="phone" placeholder="010-0000-0000"></div>
+          </div>
+          <div class="cf-group"><label class="cf-label">이메일</label><input class="cf-input" type="email" id="c-email" name="email" placeholder="email@example.com"></div>
+          <div class="cf-group"><label class="cf-label">회사명</label><input class="cf-input" id="c-company" name="company" placeholder="회사명을 입력해 주세요"></div>
+          <div class="cf-group"><label class="cf-label">문의 제목 <span class="cf-req">*</span></label><input class="cf-input" id="c-subject" name="subject" placeholder="문의 제목을 입력해 주세요"></div>
+          <div class="cf-group"><label class="cf-label">문의 내용 <span class="cf-req">*</span></label><textarea class="cf-textarea" id="c-msg" name="message" placeholder="문의 내용을 상세히 입력해 주세요."></textarea></div>
+          <button class="btn btn--quote cf-submit" onclick="sendConsultation()">상담 신청</button>
+          <div class="cf-success" id="c-success">✔ 상담 신청이 완료되었습니다. 빠른 시일 내에 연락드리겠습니다.</div>
+        </div>
       </div>
-      <div class="cf-group"><label class="cf-label">이메일</label><input class="cf-input" type="email" id="c-email" name="email" placeholder="email@example.com"></div>
-      <div class="cf-group"><label class="cf-label">회사명</label><input class="cf-input" id="c-company" name="company" placeholder="회사명을 입력해 주세요"></div>
-      <div class="cf-group"><label class="cf-label">문의 제목 *</label><input class="cf-input" id="c-subject" name="subject" placeholder="문의 제목을 입력해 주세요"></div>
-      <div class="cf-group"><label class="cf-label">문의 내용 *</label><textarea class="cf-textarea" id="c-msg" name="message" placeholder="문의 내용을 상세히 입력해 주세요."></textarea></div>
-      <button class="cf-submit" onclick="sendConsultation()">상담 신청</button>
-      <div class="cf-success" id="c-success">✔ 상담 신청이 완료되었습니다. 빠른 시일 내에 연락드리겠습니다.</div>
     </div>
   </div>
 </div>
@@ -1096,31 +1100,35 @@
       <div class="rule"></div>
     </div>
   </div>
-  <div class="content-wrap">
-    <div class="sec-title">견적요청</div>
-    <div class="quote-form">
-      <div class="cf-row">
-        <div class="cf-group"><label class="cf-label">담당자 성함 *</label><input class="cf-input" id="q-name" name="name" placeholder="성함"></div>
-        <div class="cf-group"><label class="cf-label">연락처 *</label><input class="cf-input" id="q-phone" name="phone" placeholder="010-0000-0000"></div>
+  <div class="section container">
+    <div class="plate" style="max-width:760px;margin-inline:auto">
+      <div class="plate__band"><span>Request a Quote</span><span>견적요청</span></div>
+      <div class="plate__body">
+        <div class="quote-form">
+          <div class="cf-row">
+            <div class="cf-group"><label class="cf-label">담당자 성함 <span class="cf-req">*</span></label><input class="cf-input" id="q-name" name="name" placeholder="성함"></div>
+            <div class="cf-group"><label class="cf-label">연락처 <span class="cf-req">*</span></label><input class="cf-input" id="q-phone" name="phone" placeholder="010-0000-0000"></div>
+          </div>
+          <div class="cf-row">
+            <div class="cf-group"><label class="cf-label">이메일 <span class="cf-req">*</span></label><input class="cf-input" type="email" id="q-email" name="email" placeholder="email@example.com"></div>
+            <div class="cf-group"><label class="cf-label">회사명 <span class="cf-req">*</span></label><input class="cf-input" id="q-company" name="company" placeholder="회사명"></div>
+          </div>
+          <div class="cf-group"><label class="cf-label">요청 제품</label>
+            <select class="cf-select" id="q-product" name="product">
+              <option value="">-- 제품 선택 --</option>
+              <option>링블로워</option>
+              <option>고압플런저펌프</option>
+              <option>고압세척기</option>
+              <option>고압세척시스템</option>
+              <option>기타</option>
+            </select>
+          </div>
+          <div class="cf-group"><label class="cf-label">요청 수량</label><input class="cf-input" id="q-qty" name="quantity" placeholder="수량을 입력해 주세요"></div>
+          <div class="cf-group"><label class="cf-label">상세 요청사항 <span class="cf-req">*</span></label><textarea class="cf-textarea" id="q-msg" name="message" placeholder="제품 사양, 용도, 납기 등 상세 내용을 입력해 주세요."></textarea></div>
+          <button class="btn btn--quote cf-submit" onclick="sendQuote()">견적 요청</button>
+          <div class="cf-success" id="q-success">✔ 견적 요청이 완료되었습니다. 빠른 시일 내에 견적서를 보내드리겠습니다.</div>
+        </div>
       </div>
-      <div class="cf-row">
-        <div class="cf-group"><label class="cf-label">이메일 *</label><input class="cf-input" type="email" id="q-email" name="email" placeholder="email@example.com"></div>
-        <div class="cf-group"><label class="cf-label">회사명 *</label><input class="cf-input" id="q-company" name="company" placeholder="회사명"></div>
-      </div>
-      <div class="cf-group"><label class="cf-label">요청 제품</label>
-        <select class="cf-select" id="q-product" name="product">
-          <option value="">-- 제품 선택 --</option>
-          <option>링블로워</option>
-          <option>고압플런저펌프</option>
-          <option>고압세척기</option>
-          <option>고압세척시스템</option>
-          <option>기타</option>
-        </select>
-      </div>
-      <div class="cf-group"><label class="cf-label">요청 수량</label><input class="cf-input" id="q-qty" name="quantity" placeholder="수량을 입력해 주세요"></div>
-      <div class="cf-group"><label class="cf-label">상세 요청사항 *</label><textarea class="cf-textarea" id="q-msg" name="message" placeholder="제품 사양, 용도, 납기 등 상세 내용을 입력해 주세요."></textarea></div>
-      <button class="cf-submit" onclick="sendQuote()">견적 요청</button>
-      <div class="cf-success" id="q-success">✔ 견적 요청이 완료되었습니다. 빠른 시일 내에 견적서를 보내드리겠습니다.</div>
     </div>
   </div>
 </div>
@@ -1294,45 +1302,30 @@
       <div class="rule"></div>
     </div>
   </div>
-  <div class="home-contact" style="padding-top:60px">
-    <div class="contact-inner">
-      <div class="contact-info">
-        <h2>CONTACT US</h2>
-        <div class="contact-row">
-          <div class="contact-row-icon">📍</div>
-          <div class="contact-row-text">
-            <strong>주소</strong>
-            인천광역시 서구 봉수대로 1568번길 63-20<br>
-            (인천광역시 서구 금곡동 273-38)
+  <div class="section container">
+    <div class="plate">
+      <div class="plate__band"><span>Contact Us</span><span>오시는 길 · 문의</span></div>
+      <div class="plate__body">
+        <div class="contact-grid">
+          <table class="data-table">
+            <tr><td>주소</td><td>인천광역시 서구 봉수대로 1568번길 63-20<br>(인천광역시 서구 금곡동 273-38)</td></tr>
+            <tr><td>대표전화</td><td>032-567-9087</td></tr>
+            <tr><td>팩스</td><td>032-567-9088</td></tr>
+            <tr><td>이메일</td><td>master@dhfm.co.kr</td></tr>
+            <tr><td>업무시간</td><td>평일 09:00 ~ 18:00 (토·공휴일 휴무)</td></tr>
+          </table>
+          <div class="contact-form">
+            <div class="cf-row">
+              <div class="cf-group"><input class="cf-input" type="text" placeholder="성함" id="ct-name"></div>
+              <div class="cf-group"><input class="cf-input" type="text" placeholder="연락처" id="ct-phone"></div>
+            </div>
+            <div class="cf-group"><input class="cf-input" type="email" placeholder="이메일" id="ct-email"></div>
+            <div class="cf-group"><input class="cf-input" type="text" placeholder="제목" id="ct-subject"></div>
+            <div class="cf-group"><textarea class="cf-textarea" placeholder="문의 내용을 입력해 주세요." id="ct-msg"></textarea></div>
+            <button class="btn btn--quote" onclick="submitForm('ct-success')">보내기</button>
+            <div class="cf-success" id="ct-success">메시지가 성공적으로 전송되었습니다!</div>
           </div>
         </div>
-        <div class="contact-row">
-          <div class="contact-row-icon">📞</div>
-          <div class="contact-row-text"><strong>대표전화</strong>032-567-9087</div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-row-icon">📠</div>
-          <div class="contact-row-text"><strong>팩스</strong>032-567-9088</div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-row-icon">✉️</div>
-          <div class="contact-row-text"><strong>이메일</strong>master@dhfm.co.kr</div>
-        </div>
-        <div class="contact-row" style="border-bottom:none">
-          <div class="contact-row-icon">🕐</div>
-          <div class="contact-row-text"><strong>업무시간</strong>평일 09:00 ~ 18:00 (토·공휴일 휴무)</div>
-        </div>
-      </div>
-      <div class="contact-form">
-        <div class="form-row">
-          <div class="form-group"><input type="text" placeholder="성함" id="ct-name"></div>
-          <div class="form-group"><input type="text" placeholder="연락처" id="ct-phone"></div>
-        </div>
-        <div class="form-group"><input type="email" placeholder="이메일" id="ct-email"></div>
-        <div class="form-group"><input type="text" placeholder="제목" id="ct-subject"></div>
-        <div class="form-group"><textarea placeholder="문의 내용을 입력해 주세요." id="ct-msg"></textarea></div>
-        <button class="btn-send" onclick="submitForm('ct-success')">보내기</button>
-        <div class="form-success" id="ct-success" style="display:none">메시지가 성공적으로 전송되었습니다!</div>
       </div>
     </div>
   </div>
