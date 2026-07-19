@@ -268,6 +268,49 @@ body { padding-top: var(--header-h); }
   .hero-row { opacity: 1; animation: none; }
 }
 
+/* ── T1 홈 — 제품 3종 그리드 ── */
+.prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.prod-plate { text-decoration: none; display: block; transition: border-color 0.15s; }
+.prod-plate:hover { border-color: var(--cast); }
+.prod-plate img { border-block: 1px solid var(--machined); background: var(--white);
+                  aspect-ratio: 4/3; object-fit: contain; padding: 20px; }
+.prod-plate__ko { font-size: 1.15rem; margin-bottom: 14px; }
+@media (max-width: 860px) { .prod-grid { grid-template-columns: 1fr; } }
+
+/* ── T1 홈 — 근거 4항 띠 ── */
+.proof-strip { display: grid; grid-template-columns: repeat(4, 1fr); }
+.proof { padding: 26px var(--pad); border-right: 1px solid var(--machined);
+         display: flex; flex-direction: column; gap: 6px; }
+.proof:last-child { border-right: 0; }
+.proof .num { font-family: var(--font-data); font-size: 1.35rem; font-weight: 600; letter-spacing: -0.01em; }
+.proof span:last-child { font-size: 0.78rem; color: var(--iron); line-height: 1.5; }
+@media (max-width: 860px) {
+  .proof-strip { grid-template-columns: repeat(2, 1fr); }
+  .proof:nth-child(2n) { border-right: 0; }
+  .proof:nth-child(-n+2) { border-bottom: 1px solid var(--machined); }
+}
+
+/* ── T1 홈 — 사업분야 띠 · 견적요청 밴드 ── */
+.biz-strip { display: grid; grid-template-columns: repeat(3, 1fr); }
+.biz-strip a { display: flex; align-items: center; gap: 14px; padding: 24px var(--pad);
+               text-decoration: none; border-right: 1px solid var(--machined); transition: background 0.15s; }
+.biz-strip a:last-child { border-right: 0; }
+.biz-strip a:hover { background: var(--cast); color: var(--plate); }
+.biz-strip .data { font-size: 0.7rem; color: var(--iron); letter-spacing: 0.1em; }
+.biz-strip a:hover .data { color: var(--machined); }
+
+.quote-band { background: var(--cast); color: var(--plate); padding-block: var(--gap); }
+.quote-band__inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.quote-band__title { font-size: clamp(1.2rem, 2.6vw, 1.7rem); font-weight: 600; }
+.quote-band__sub { color: var(--machined); font-size: 0.88rem; margin-top: 8px; max-width: 46ch; }
+@media (max-width: 860px) { .biz-strip { grid-template-columns: 1fr; }
+  .biz-strip a { border-right: 0; border-bottom: 1px solid var(--machined); } }
+
+/* ── T1 홈 — 연락처 + 지도 ── */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 20px; align-items: start; }
+.map-slot { min-height: 380px; background: var(--machined); }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+
 /* ══════ 17. 접근성 ══════ */
 :focus-visible {
   outline: 2px solid var(--oxide);

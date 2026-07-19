@@ -213,126 +213,96 @@
     </div>
   </div>
 
-  <div class="home-products">
-    <div class="section-header">
-      <div class="section-tag">Our Products</div>
-      <div class="section-title">주요 제품<span class="ko">링블로워 · 고압펌프 · 세척시스템</span></div>
-    </div>
-    <div class="product-grid">
-      <div class="product-card" onclick="goto('ringblower')">
-        <div class="product-icon">🔩</div>
-        <h3>Ring Blower</h3>
-        <div class="ko-name">링블로워</div>
-        <ul>
-          <li>2단 임펠러 구조의 흡입 토출 기능</li>
-          <li>최고의 토출압, 고효율, 무급유</li>
-          <li>저소음 구현으로 실내설치 가능</li>
-          <li>100% 국산화 개발화 신속한 A/S</li>
-        </ul>
-        <span class="more-link">More Info →</span>
-      </div>
-      <div class="product-card" onclick="goto('plungerpump')">
-        <div class="product-icon">⚙️</div>
-        <h3>High Pressure Pump</h3>
-        <div class="ko-name">고압 플런저 펌프</div>
-        <ul>
-          <li>고효율 펌프</li>
-          <li>높은 내구성</li>
-          <li>펌프 전용 바이패스 부착</li>
-          <li>안전을 고려한 견고한 단조헤드</li>
-        </ul>
-        <span class="more-link">More Info →</span>
-      </div>
-      <div class="product-card" onclick="goto('washingsystem')">
-        <div class="product-icon">💧</div>
-        <h3>High Pressure Washing System</h3>
-        <div class="ko-name">고압 세척 시스템</div>
-        <ul>
-          <li>고압수 분무를 이용한 강력한 세척력</li>
-          <li>적은 물 사용량으로 고효율</li>
-          <li>100% 자체기술력 신속한 A/S</li>
-          <li>고객 맞춤형 특수 제작 가능</li>
-        </ul>
-        <span class="more-link">More Info →</span>
-      </div>
-    </div>
-  </div>
-
-  <div style="padding: 0 40px 0;">
-    <div class="home-about">
-      <div class="home-about-text">
-        <h2>ABOUT US</h2>
-        <p>대하산업기계(주) 홈페이지에 방문해주셔서 감사합니다.</p>
-        <p>당사는 링블로워, 고압 플런저펌프, 고압 세척기, R/O 시스템용 고압 펌프 및 고압세척시스템을 제조, 판매하는 업체입니다.</p>
-        <p>균일한 고품질 제품 생산을 위해 항상 노력하는 자세를 유지하며, 책임있는 사후 관리를 위하여 전직원이 한마음으로 노력할 것입니다.</p>
-        <button class="btn-primary" onclick="goto('ceo')" style="margin-top:12px">Read More</button>
-      </div>
-      <div class="home-about-stats">
-        <div class="stat-box">
-          <div class="stat-num">2016</div>
-          <div class="stat-label">설립연도</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num">ISO</div>
-          <div class="stat-label">9001 인증</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num">100%</div>
-          <div class="stat-label">국산화 개발</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num">A/S</div>
-          <div class="stat-label">신속 대응</div>
-        </div>
+  <div class="section">
+    <div class="container">
+      <div class="prod-grid">
+        <a class="plate prod-plate" href="#" onclick="goto('ringblower')">
+          <div class="plate__band"><span>01 / Ring Blower</span><span>DH Series</span></div>
+          <img src="images/gallery/rb-01.jpg" alt="대하산업기계 링블로워 DH 시리즈"
+               width="676" height="954" loading="lazy">
+          <div class="plate__body">
+            <h3 class="prod-plate__ko">링블로워</h3>
+            <table class="data-table">
+              <tr><td>PRESS.</td><td>1,000–6,000 mmAq</td></tr>
+              <tr><td>FLOW</td><td>0.8–21.5 m³/min</td></tr>
+              <tr><td>POWER</td><td>0.4–37 kW</td></tr>
+            </table>
+          </div>
+        </a>
+        <a class="plate prod-plate" href="#" onclick="goto('plungerpump')">
+          <div class="plate__band"><span>02 / Plunger Pump</span><span>F · J · D · M Series</span></div>
+          <img src="images/gallery/pump-01.jpg" alt="대하산업기계 고압 플런저펌프"
+               width="964" height="708" loading="lazy">
+          <div class="plate__body">
+            <h3 class="prod-plate__ko">고압 플런저펌프</h3>
+            <table class="data-table">
+              <tr><td>PRESS.</td><td>80–560 bar</td></tr>
+              <tr><td>FLOW</td><td>10–1,924 L/min</td></tr>
+              <tr><td>POWER</td><td>3–790 kW</td></tr>
+            </table>
+          </div>
+        </a>
+        <a class="plate prod-plate" href="#" onclick="goto('washingsystem')">
+          <div class="plate__band"><span>03 / Washing System</span><span>HPPS Series</span></div>
+          <img src="images/gallery/syspump-01.jpg" alt="대하산업기계 고압세척시스템 HPPS 시리즈"
+               width="594" height="388" loading="lazy">
+          <div class="plate__body">
+            <h3 class="prod-plate__ko">고압세척시스템</h3>
+            <table class="data-table">
+              <tr><td>PRESS.</td><td>80–500 bar</td></tr>
+              <tr><td>FLOW</td><td>30–420 L/min</td></tr>
+              <tr><td>POWER</td><td>30–160 HP</td></tr>
+            </table>
+          </div>
+        </a>
       </div>
     </div>
   </div>
 
-  <div class="home-contact">
-    <div class="contact-inner">
-      <div class="contact-info">
-        <h2>CONTACT US</h2>
-        <div class="contact-row">
-          <div class="contact-row-icon">📍</div>
-          <div class="contact-row-text">
-            <strong>주소</strong>
-            인천광역시 서구 봉수대로 1568번길 63-20<br>
-            (인천광역시 서구 금곡동 273-38)
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-row-icon">📞</div>
-          <div class="contact-row-text">
-            <strong>대표전화</strong>032-567-9087
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-row-icon">📠</div>
-          <div class="contact-row-text">
-            <strong>팩스</strong>032-567-9088
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-row-icon">✉️</div>
-          <div class="contact-row-text">
-            <strong>이메일</strong>master@dhfm.co.kr
-          </div>
-        </div>
-      </div>
-      <div class="contact-form">
-        <div class="form-row">
-          <div class="form-group"><input type="text" placeholder="성함" id="h-name" name="name"></div>
-          <div class="form-group"><input type="text" placeholder="연락처" id="h-phone" name="phone"></div>
-        </div>
-        <div class="form-group"><input type="email" placeholder="이메일" id="h-email" name="email"></div>
-        <div class="form-group"><input type="text" placeholder="제목" id="h-subject" name="subject"></div>
-        <div class="form-group"><textarea placeholder="문의 내용을 입력해 주세요." id="h-msg" name="message"></textarea></div>
-        <button class="btn-send" onclick="sendMsg()">보내기</button>
-        <div class="form-success" id="h-success">메시지가 성공적으로 전송되었습니다!</div>
-      </div>
+  <div class="container">
+    <div class="plate proof-strip">
+      <div class="proof"><span class="num">2016</span><span>설립</span></div>
+      <div class="proof"><span class="num">ISO 9001</span><span>품질경영 인증</span></div>
+      <div class="proof"><span class="num">100%</span><span>자체 설계·국내 생산</span></div>
+      <div class="proof"><span class="num">5-AXIS</span><span>5축 가공 · 유동해석 설계</span></div>
     </div>
-    <div style="max-width:1100px; margin:40px auto 0;">
-      <div id="naver-map" style="width:100%; height:360px; border-radius:4px; overflow:hidden; background:#e8e8e8;"></div>
+  </div>
+
+  <div class="section container">
+    <div class="plate biz-strip">
+      <a href="#" onclick="goto('blowerbs')"><span class="data">01</span>블로워사업</a>
+      <a href="#" onclick="goto('pumpbs')"><span class="data">02</span>펌프사업</a>
+      <a href="#" onclick="goto('pumpsystembs')"><span class="data">03</span>펌프시스템사업</a>
+    </div>
+  </div>
+
+  <div class="quote-band">
+    <div class="container quote-band__inner">
+      <div>
+        <h2 class="quote-band__title">필요한 사양을 알려주시면 회신드립니다</h2>
+        <p class="quote-band__sub">모델·용도·수량만 있으면 검토 가능합니다. 특수 사양 주문 제작도 상담해 드립니다.</p>
+      </div>
+      <button class="btn btn--quote" onclick="goto('quote')">견적요청 →</button>
+    </div>
+  </div>
+
+  <div class="section container">
+    <div class="contact-grid">
+      <div class="plate">
+        <div class="plate__band"><span>Location</span><span>Incheon</span></div>
+        <div class="plate__body">
+          <table class="data-table">
+            <tr><td>ADDR.</td><td>인천광역시 서구 봉수대로 1568번길 63-20<br>(서구 금곡동 273-38)</td></tr>
+            <tr><td>TEL.</td><td>032-567-9087</td></tr>
+            <tr><td>FAX.</td><td>032-567-9088</td></tr>
+            <tr><td>MAIL.</td><td>master@dhfm.co.kr</td></tr>
+          </table>
+          <a class="btn btn--ghost" style="margin-top:20px"
+             href="https://map.naver.com/p/search/인천광역시 서구 봉수대로 1568번길 63-20"
+             target="_blank" rel="noopener">네이버지도에서 보기 →</a>
+        </div>
+      </div>
+      <div id="naver-map" class="plate map-slot"></div>
     </div>
   </div>
 </div>
@@ -1276,36 +1246,6 @@ function gotoMobile(key) {
   menu.classList.remove('open');
   btn.classList.remove('open');
   document.body.style.overflow = '';
-}
-
-async function sendMsg() {
-  const name = document.getElementById('h-name').value.trim();
-  const msg = document.getElementById('h-msg').value.trim();
-  if (!name || !msg) { alert('성함과 문의 내용을 입력해 주세요.'); return; }
-  const btn = document.querySelector('.btn-send');
-  btn.disabled = true; btn.textContent = '전송 중...';
-  try {
-    const res = await fetch('https://formspree.io/f/meedkznw', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({
-        name, phone: document.getElementById('h-phone').value,
-        email: document.getElementById('h-email').value,
-        subject: document.getElementById('h-subject').value,
-        message: msg
-      })
-    });
-    if (res.ok) {
-      document.getElementById('h-success').style.display = 'block';
-      ['h-name','h-phone','h-email','h-subject','h-msg'].forEach(id => document.getElementById(id).value='');
-    } else {
-      alert('전송에 실패했습니다. 직접 이메일로 문의해 주세요: master@dhfm.co.kr');
-    }
-  } catch (e) {
-    alert('전송에 실패했습니다. 직접 이메일로 문의해 주세요: master@dhfm.co.kr');
-  } finally {
-    btn.disabled = false; btn.textContent = '보내기';
-  }
 }
 
 function submitForm(successId) {
