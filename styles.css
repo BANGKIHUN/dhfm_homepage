@@ -333,6 +333,10 @@ body { padding-top: var(--header-h); }
 .lightbox-img { max-width: 92vw; max-height: 88vh; object-fit: contain; }
 .lightbox--single .lightbox-prev, .lightbox--single .lightbox-next { display: none; }
 
+/* ══════ 10. T3 사업분야 ══════ */
+.biz-stack { display: flex; flex-direction: column; gap: 20px; }
+.biz-stack .spec-figure { margin-top: 0; }
+
 /* ══════ 17. 접근성 ══════ */
 :focus-visible {
   outline: 2px solid var(--oxide);
