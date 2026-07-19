@@ -24,8 +24,8 @@
   `--veil` 라이트박스 오버레이
   `--hairline-dark` 어두운 면 위의 구분선
   `--edge-light` 명판 가장자리 인셋 하이라이트
-- **`--oxide` 사용처는 3곳뿐:** 견적요청 CTA / 현재 위치 표시 / 카테고리 마크
-- **서체 3역할:** Display=Archivo 700–800 대문자 / Body=IBM Plex Sans KR 400·500 / Data=IBM Plex Mono 500 `font-variant-numeric: tabular-nums`
+- **`--oxide` 사용처는 4곳뿐:** 견적요청 CTA / 현재 위치 표시(활성 내비·활성 탭) / 카테고리 마크 / 키보드 포커스 링(`:focus-visible`). 포커스 링은 접근성 표시로, 가장 눈에 띄는 색이어야 한다.
+- **서체 3역할:** Display=Archivo 700–800 대문자 / Body=IBM Plex Sans KR 400·500 (제목·강조는 600 허용) / Data=IBM Plex Mono 500 `font-variant-numeric: tabular-nums`
 - **리벳은 홈 히어로 명판에만.** 다른 플레이트 금지.
 - **그라디언트·드롭 섀도·질감 금지.** 경계선과 구조로만 명판감을 만든다.
   단, **구조용 1px 인셋 헤어라인**(`box-shadow: inset 0 0 0 1px ...`)은 금속판 가장자리 표현으로 허용한다. 번짐(blur)이 0이 아닌 그림자는 어떤 형태든 금지.
@@ -85,7 +85,7 @@ cd "D:/workspace/dhfm homepage" && python -m http.server 8899
 **Interfaces:**
 - Produces: 이후 모든 태스크가 사용하는 클래스 —
   `.plate` `.plate--rivet` `.plate__band` `.plate__body` `.plate__foot`
-  `.rule` `.rule--thin` `.data` `.data__key` `.data__val`
+  `.rule` `.rule--thin` `.data` `.data-table`
   `.container` `.section` `.btn` `.btn--quote` `.btn--ghost` `.mark`
 
 - [ ] **Step 1: `<head>` 폰트 링크 교체**
