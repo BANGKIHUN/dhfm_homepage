@@ -54,6 +54,10 @@ a { color: inherit; }
 img { max-width: 100%; height: auto; display: block; }
 
 /* ══════ 3. 레이아웃 유틸 ══════ */
+/* SPA 페이지 전환 — goto()가 .active를 토글한다 */
+.page        { display: none; }
+.page.active { display: block; }
+
 .container { width: 100%; max-width: 1180px; margin-inline: auto; padding-inline: var(--pad); }
 .section   { padding-block: var(--gap); }
 .measure   { max-width: var(--measure); }
