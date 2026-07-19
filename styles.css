@@ -311,6 +311,28 @@ body { padding-top: var(--header-h); }
 .map-slot { min-height: 380px; background: var(--machined); }
 @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
 
+/* ══════ 9. T2 제품 상세 ══════ */
+.prod-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.prod-hero-img { background: var(--white); padding: 32px; aspect-ratio: 1; object-fit: contain; }
+
+.spec-figure { margin-top: 20px; }
+.spec-figure img { cursor: zoom-in; background: var(--white); }
+.spec-figure figcaption {
+  font-family: var(--font-data); font-size: 0.66rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--iron);
+  padding: 10px var(--pad); border-top: 1px solid var(--machined);
+  display: flex; justify-content: space-between; gap: 12px;
+}
+@media (max-width: 860px) { .prod-detail { grid-template-columns: 1fr; } }
+
+/* 라이트박스 기본 — Task 9의 갤러리보다 먼저 필요하므로 여기서 정의한다.
+   Task 9은 갤러리 전용 스타일만 추가하고 이 블록을 중복 정의하지 않는다. */
+.lightbox { display: none; position: fixed; inset: 0; z-index: 2000;
+            background: var(--veil); place-items: center; padding: 40px; }
+.lightbox.open { display: grid; }
+.lightbox-img { max-width: 92vw; max-height: 88vh; object-fit: contain; }
+.lightbox--single .lightbox-prev, .lightbox--single .lightbox-next { display: none; }
+
 /* ══════ 17. 접근성 ══════ */
 :focus-visible {
   outline: 2px solid var(--oxide);
