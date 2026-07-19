@@ -254,10 +254,10 @@ body { padding-top: var(--header-h); }
 /* 각인 모션 — 총 600ms, 이 사이트의 유일한 오케스트레이션 */
 .hero-row { opacity: 0; animation: engrave 0.28s ease-out forwards; }
 .hero-row:nth-child(1) { animation-delay: 0.08s; }
-.hero-row:nth-child(2) { animation-delay: 0.19s; }
-.hero-row:nth-child(3) { animation-delay: 0.30s; }
-.hero-row:nth-child(4) { animation-delay: 0.41s; }
-.hero-row:nth-child(5) { animation-delay: 0.52s; }
+.hero-row:nth-child(2) { animation-delay: 0.14s; }
+.hero-row:nth-child(3) { animation-delay: 0.20s; }
+.hero-row:nth-child(4) { animation-delay: 0.26s; }
+.hero-row:nth-child(5) { animation-delay: 0.32s; }
 
 @keyframes engrave {
   from { opacity: 0; transform: translateY(-4px); }
