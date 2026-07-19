@@ -233,6 +233,17 @@ body { padding-top: var(--header-h); }
 .footer-base a:hover { color: var(--plate); }
 @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr; gap: 32px; } }
 
+/* ══════ 7. 페이지 명판 ══════ */
+.page-plate { border-bottom: 1px solid var(--machined); padding-block: clamp(40px, 6vw, 72px) 0; }
+.page-plate__cat {
+  font-family: var(--font-data); font-size: 0.66rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--iron);
+}
+.page-plate__title { font-family: var(--font-display); font-weight: 800;
+                     font-size: clamp(1.9rem, 4.5vw, 2.9rem); margin-top: 10px; }
+.page-plate__ko { font-size: 0.92rem; color: var(--iron); margin-top: 6px; }
+.page-plate .rule { margin-bottom: 0; }
+
 /* ══════ 17. 접근성 ══════ */
 :focus-visible {
   outline: 2px solid var(--oxide);
