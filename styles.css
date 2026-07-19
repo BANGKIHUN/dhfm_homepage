@@ -334,8 +334,7 @@ body { padding-top: var(--header-h); }
 .lightbox--single .lightbox-prev, .lightbox--single .lightbox-next { display: none; }
 
 /* ══════ 10. T3 사업분야 ══════ */
-.biz-stack { display: flex; flex-direction: column; gap: 20px; }
-.biz-stack .spec-figure { margin-top: 0; }
+/* 사업분야 페이지는 공용 .spec-figure 패턴만 사용 — 전용 규칙 없음 */
 
 /* ══════ 17. 접근성 ══════ */
 :focus-visible {
