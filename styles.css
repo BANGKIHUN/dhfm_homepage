@@ -231,7 +231,7 @@ body { padding-top: var(--header-h); }
 .footer-base {
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
   margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--hairline-dark);
-  font-size: 0.68rem; letter-spacing: 0.08em; color: var(--iron);
+  font-size: 0.68rem; letter-spacing: 0.08em; color: var(--machined);   /* 대비 수정 — iron(2.3:1)은 --cast 배경에서 기준 미달, machined(9.5:1)로 교체 */
 }
 .footer-base a { margin-left: 18px; text-decoration: none; }
 .footer-base a:hover { color: var(--plate); }
