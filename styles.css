@@ -273,6 +273,8 @@ body { padding-top: var(--header-h); }
 .prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .prod-plate { text-decoration: none; display: block; transition: border-color 0.15s; }
 .prod-plate:hover { border-color: var(--cast); }
+/* 밴드 라벨이 한 카드에서만 줄바꿈되어도 세 카드의 밴드 높이가 같도록 두 줄 기준 고정 */
+.prod-plate .plate__band { min-height: calc(3.6em + 20px); }
 .prod-plate img { border-block: 1px solid var(--machined); background: var(--white);
                   aspect-ratio: 4/3; object-fit: contain; padding: 20px; }
 .prod-plate__ko { font-size: 1.15rem; margin-bottom: 14px; }
