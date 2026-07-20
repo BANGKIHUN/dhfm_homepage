@@ -53,12 +53,12 @@
 </script>
 
 <!-- Favicon (SVG 인라인) -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%230a1628'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='%23ffffff' letter-spacing='-1'>DH</text><text x='50%25' y='80%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='%23c8922a' letter-spacing='-1'>FM</text></svg>">
-<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%230a1628'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='%23ffffff' letter-spacing='-1'>DH</text><text x='50%25' y='80%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='%23c8922a' letter-spacing='-1'>FM</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2323262A'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='%23ECEDEB' letter-spacing='-1'>DH</text><text x='50%25' y='80%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='%23B23A1E' letter-spacing='-1'>FM</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2323262A'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='%23ECEDEB' letter-spacing='-1'>DH</text><text x='50%25' y='80%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='%23B23A1E' letter-spacing='-1'>FM</text></svg>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -320,7 +320,7 @@
   <div class="section container">
     <div class="doc measure">
       <h2>CEO 인사말</h2>
-      <p>👔<br>대표이사<br>방창열</p>
+      <p class="ceo-badge"><span class="ceo-badge__label">대표이사</span><span class="ceo-badge__name">방창열</span></p>
       <p>대하산업기계 주식회사 홈페이지를 방문해 주셔서 감사합니다.</p>
       <p>대하산업기계(주) 대표이사 <strong>방창열</strong> 입니다.</p>
       <p>당사는 링블로워, 고압 플린저펌프, 고압 세척기, R/O 시스템용 고압 펌프 및 고압세척시스템을 제조, 판매하는 업체입니다.</p>
@@ -448,7 +448,7 @@
       <figure class="plate spec-figure cert-figure">
         <img src="images/ISO 9001_kor.jpg" alt="ISO 9001 품질경영시스템 인증서"
              width="3510" height="2483" loading="lazy"
-             onclick="openCatalog(this.src, 'ISO 9001 품질경영시스템 인증서')">
+             tabindex="0" onclick="openCatalog(this.src, 'ISO 9001 품질경영시스템 인증서')">
         <figcaption><span>Certificate — ISO 9001</span><span>클릭하여 확대</span></figcaption>
       </figure>
       <div class="plate">
@@ -509,7 +509,7 @@
     <figure class="plate spec-figure">
       <img src="images/ringblower-04-specs.jpg" alt="링블로워 제원표"
            width="2480" height="3505" loading="lazy"
-           onclick="openCatalog(this.src, '링블로워 제원표')">
+           tabindex="0" onclick="openCatalog(this.src, '링블로워 제원표')">
       <figcaption><span>Catalog — 제원표</span><span>클릭하여 확대</span></figcaption>
     </figure>
   </div>
@@ -558,25 +558,25 @@
     <figure class="plate spec-figure">
       <img src="images/plungerpump-large-specs.png" alt="대형 F·J 시리즈 플런저펌프 제원표"
            width="849" height="817" loading="lazy"
-           onclick="openCatalog(this.src, '대형 F·J 시리즈 제원표')">
+           tabindex="0" onclick="openCatalog(this.src, '대형 F·J 시리즈 제원표')">
       <figcaption><span>Catalog — 대형 F·J 시리즈 제원표</span><span>클릭하여 확대</span></figcaption>
     </figure>
     <figure class="plate spec-figure">
       <img src="images/plungerpump-medium-specs.png" alt="중형 D·D4·H·M·P 시리즈 플런저펌프 제원표"
            width="2265" height="2241" loading="lazy"
-           onclick="openCatalog(this.src, '중형 D·D4·H·M·P 시리즈 제원표')">
+           tabindex="0" onclick="openCatalog(this.src, '중형 D·D4·H·M·P 시리즈 제원표')">
       <figcaption><span>Catalog — 중형 D·D4·H·M·P 시리즈 제원표</span><span>클릭하여 확대</span></figcaption>
     </figure>
     <figure class="plate spec-figure">
       <img src="images/plungerpump-small-specs.png" alt="소형 S2·DHS1·DHS2·S·T 시리즈 플런저펌프 제원표"
            width="847" height="820" loading="lazy"
-           onclick="openCatalog(this.src, '소형 S2·DHS1·DHS2·S·T 시리즈 제원표')">
+           tabindex="0" onclick="openCatalog(this.src, '소형 S2·DHS1·DHS2·S·T 시리즈 제원표')">
       <figcaption><span>Catalog — 소형 S2·DHS1·DHS2·S·T 시리즈 제원표</span><span>클릭하여 확대</span></figcaption>
     </figure>
     <figure class="plate spec-figure">
       <img src="images/plungerpump-photo.jpg" alt="F6000·F5000 시리즈 플런저펌프 제원표"
            width="842" height="516" loading="lazy"
-           onclick="openCatalog(this.src, 'F6000·F5000 시리즈 제원표')">
+           tabindex="0" onclick="openCatalog(this.src, 'F6000·F5000 시리즈 제원표')">
       <figcaption><span>Catalog — F6000·F5000 시리즈 제원표</span><span>클릭하여 확대</span></figcaption>
     </figure>
   </div>
@@ -625,13 +625,13 @@
     <figure class="plate spec-figure">
       <img src="images/washer-specs.png" alt="고압 세척기 모델별 제원표"
            width="844" height="658" loading="lazy"
-           onclick="openCatalog(this.src, '고압 세척기 모델별 제원표')">
+           tabindex="0" onclick="openCatalog(this.src, '고압 세척기 모델별 제원표')">
       <figcaption><span>Catalog — 모델별 제원표</span><span>클릭하여 확대</span></figcaption>
     </figure>
     <figure class="plate spec-figure">
       <img src="images/washer-photo.jpg" alt="노즐구경 및 고압호스 선정표"
            width="1912" height="1592" loading="lazy"
-           onclick="openCatalog(this.src, '노즐구경 및 고압호스 선정표')">
+           tabindex="0" onclick="openCatalog(this.src, '노즐구경 및 고압호스 선정표')">
       <figcaption><span>Catalog — 노즐구경 및 고압호스 선정표</span><span>클릭하여 확대</span></figcaption>
     </figure>
   </div>
@@ -680,19 +680,19 @@
     <figure class="plate spec-figure">
       <img src="images/washingsystem-specs1.png" alt="고압세척시스템 제원표 1, HPPS 1000~1370"
            width="2245" height="2469" loading="lazy"
-           onclick="openCatalog(this.src, '제원표 1 · HPPS 1000~1370')">
+           tabindex="0" onclick="openCatalog(this.src, '제원표 1 · HPPS 1000~1370')">
       <figcaption><span>Catalog — 제원표 1 · HPPS 1000~1370</span><span>클릭하여 확대</span></figcaption>
     </figure>
     <figure class="plate spec-figure">
       <img src="images/washingsystem-specs2.png" alt="고압세척시스템 제원표 2, HPPS 1380~8276"
            width="2245" height="2397" loading="lazy"
-           onclick="openCatalog(this.src, '제원표 2 · HPPS 1380~8276')">
+           tabindex="0" onclick="openCatalog(this.src, '제원표 2 · HPPS 1380~8276')">
       <figcaption><span>Catalog — 제원표 2 · HPPS 1380~8276</span><span>클릭하여 확대</span></figcaption>
     </figure>
     <figure class="plate spec-figure">
       <img src="images/washingsystem-specs3.png" alt="고압세척시스템 제원표 3, HPPS 1008~1302"
            width="2241" height="2529" loading="lazy"
-           onclick="openCatalog(this.src, '제원표 3 · HPPS 1008~1302')">
+           tabindex="0" onclick="openCatalog(this.src, '제원표 3 · HPPS 1008~1302')">
       <figcaption><span>Catalog — 제원표 3 · HPPS 1008~1302</span><span>클릭하여 확대</span></figcaption>
     </figure>
   </div>
@@ -708,14 +708,14 @@
       <div class="rule"></div>
     </div>
   </div>
-  <div class="content-wrap">
+  <div class="section container">
     <div class="sec-title">모든 산업현장에서 진가를 발휘하고 검증된 고효율 링블로워</div>
 
     <div style="display:flex; gap:36px; align-items:flex-start; margin:16px 0 32px; flex-wrap:wrap;">
       <figure class="plate spec-figure" style="flex-shrink:0; max-width:260px;">
         <img src="images/blowerbs-01.png" alt="링블로워 제품 사진 — 모터와 블로워 본체, 흡입관이 결합된 모습"
              width="154" height="200" loading="lazy"
-             onclick="openCatalog(this.src, '링블로워 제품 사진')">
+             tabindex="0" onclick="openCatalog(this.src, '링블로워 제품 사진')">
         <figcaption><span>Blower Business — 01</span><span>클릭하여 확대</span></figcaption>
       </figure>
       <div style="flex:1; min-width:200px;">
@@ -742,7 +742,7 @@
       <figure class="plate spec-figure" style="flex-shrink:0; max-width:300px;">
         <img src="images/blowerbs-02.png" alt="링블로워 적용 현장 — 하수처리장 폭기조 전경"
              width="197" height="145" loading="lazy"
-             onclick="openCatalog(this.src, '링블로워 적용 현장 · 하수처리장 폭기조')">
+             tabindex="0" onclick="openCatalog(this.src, '링블로워 적용 현장 · 하수처리장 폭기조')">
         <figcaption><span>Blower Business — 02</span><span>클릭하여 확대</span></figcaption>
       </figure>
     </div>
@@ -751,7 +751,7 @@
     <figure class="plate spec-figure">
       <img src="images/blowerbs-03.png" alt="링블로워 구조 분해도 — 케이싱, 임펠러, 샤프트, 베어링, 냉각팬 구성"
            width="689" height="351" loading="lazy" style="width:100%;max-width:800px;margin-inline:auto;"
-           onclick="openCatalog(this.src, '링블로워 구조 분해도')">
+           tabindex="0" onclick="openCatalog(this.src, '링블로워 구조 분해도')">
       <figcaption><span>Blower Business — 03</span><span>클릭하여 확대</span></figcaption>
     </figure>
 
@@ -759,7 +759,7 @@
     <figure class="plate spec-figure">
       <img src="images/blowerbs-04.png" alt="링블로워 분류 및 작동원리 — 오픈 채널형과 사이드 채널형 단면도 및 유동해석 그림"
            width="688" height="351" loading="lazy" style="width:100%;max-width:800px;margin-inline:auto;"
-           onclick="openCatalog(this.src, '링블로워 분류 및 작동원리')">
+           tabindex="0" onclick="openCatalog(this.src, '링블로워 분류 및 작동원리')">
       <figcaption><span>Blower Business — 04</span><span>클릭하여 확대</span></figcaption>
     </figure>
 
@@ -795,7 +795,7 @@
     <figure class="plate spec-figure" style="margin-top:16px;">
       <img src="images/blowerbs-05.png" alt="링블로워 개발과정 모음 — 설계 렌더링, CFD 유동해석, 성능곡선 그래프, 시제품 및 성능시험 장비 사진"
            width="353" height="673" loading="lazy" style="width:100%;max-width:800px;margin-inline:auto;"
-           onclick="openCatalog(this.src, '링블로워 개발과정')">
+           tabindex="0" onclick="openCatalog(this.src, '링블로워 개발과정')">
       <figcaption><span>Blower Business — 05</span><span>클릭하여 확대</span></figcaption>
     </figure>
   </div>
@@ -811,15 +811,15 @@
       <div class="rule"></div>
     </div>
   </div>
-  <div class="content-wrap">
+  <div class="section container">
     <div class="sec-title">고압 펌프의 모든 문제, 대하산업기계(주)와 의논하십시오.</div>
-    <p class="body-text" style="font-size:15px;color:var(--accent);font-weight:500;">만족 그 이상을 제공합니다.</p>
+    <p class="body-text" style="font-size:15px;color:var(--iron);font-weight:500;">만족 그 이상을 제공합니다.</p>
 
     <div style="display:flex; gap:36px; align-items:flex-start; margin:24px 0 32px; flex-wrap:wrap;">
       <figure class="plate spec-figure" style="flex-shrink:0; max-width:260px;">
         <img src="images/pumpbs-01.jpg" alt="고압 피스톤펌프 제품 사진 — 다중 실린더 구조의 펌프 본체"
              width="143" height="173" loading="lazy"
-             onclick="openCatalog(this.src, '고압 피스톤펌프 제품 사진')">
+             tabindex="0" onclick="openCatalog(this.src, '고압 피스톤펌프 제품 사진')">
         <figcaption><span>Pump Business — 01</span><span>클릭하여 확대</span></figcaption>
       </figure>
       <div style="flex:1; min-width:200px;">
@@ -848,7 +848,7 @@
       <figure class="plate spec-figure" style="flex-shrink:0; max-width:300px;">
         <img src="images/pumpbs-02.jpg" alt="고압 피스톤펌프 제품군 — 단품 펌프와 이동식·패키지형 펌프시스템 구성 사진"
              width="358" height="440" loading="lazy"
-             onclick="openCatalog(this.src, '고압 피스톤펌프 제품군')">
+             tabindex="0" onclick="openCatalog(this.src, '고압 피스톤펌프 제품군')">
         <figcaption><span>Pump Business — 02</span><span>클릭하여 확대</span></figcaption>
       </figure>
     </div>
@@ -873,7 +873,7 @@
     <figure class="plate spec-figure">
       <img src="images/pumpbs-04.jpg" alt="고압피스톤펌프 구조 분해도 — 헤드, 케이스, 커버, 크랭크샤프트, 피스톤 구성"
            width="639" height="282" loading="lazy" style="width:100%;max-width:800px;margin-inline:auto;"
-           onclick="openCatalog(this.src, '고압피스톤펌프 구조 분해도')">
+           tabindex="0" onclick="openCatalog(this.src, '고압피스톤펌프 구조 분해도')">
       <figcaption><span>Pump Business — 04</span><span>클릭하여 확대</span></figcaption>
     </figure>
 
@@ -881,7 +881,7 @@
     <figure class="plate spec-figure">
       <img src="images/pumpbs-05.jpg" alt="고압피스톤펌프 전용 감속기 및 제품 표준화 특징, S·T·D·D2·H 시리즈 적용 예시"
            width="640" height="440" loading="lazy" style="width:100%;max-width:800px;margin-inline:auto;"
-           onclick="openCatalog(this.src, '고압피스톤펌프 전용 감속기')">
+           tabindex="0" onclick="openCatalog(this.src, '고압피스톤펌프 전용 감속기')">
       <figcaption><span>Pump Business — 05</span><span>클릭하여 확대</span></figcaption>
     </figure>
 
@@ -889,7 +889,7 @@
     <figure class="plate spec-figure" style="margin-bottom:24px;">
       <img src="images/pumpbs-06.jpg" alt="보유 기술 — 토출구측 속도 및 압력 분포 유동해석(CFD) 결과 그래프"
            width="331" height="285" loading="lazy" style="width:100%;max-width:800px;margin-inline:auto;"
-           onclick="openCatalog(this.src, '보유 기술 · CFD 유동해석 결과')">
+           tabindex="0" onclick="openCatalog(this.src, '보유 기술 · CFD 유동해석 결과')">
       <figcaption><span>Pump Business — 06</span><span>클릭하여 확대</span></figcaption>
     </figure>
     <p class="body-text">
@@ -906,7 +906,7 @@
     <figure class="plate spec-figure">
       <img src="images/pumpbs-07.jpg" alt="고압피스톤펌프 성능시험 설비 구성도 및 시험기 사진, KS 규격 기준 시험 항목 안내"
            width="562" height="375" loading="lazy" style="width:100%;max-width:800px;margin-inline:auto;"
-           onclick="openCatalog(this.src, '고압피스톤펌프 성능시험 설비')">
+           tabindex="0" onclick="openCatalog(this.src, '고압피스톤펌프 성능시험 설비')">
       <figcaption><span>Pump Business — 07</span><span>클릭하여 확대</span></figcaption>
     </figure>
   </div>
@@ -922,14 +922,14 @@
       <div class="rule"></div>
     </div>
   </div>
-  <div class="content-wrap">
+  <div class="section container">
     <div class="sec-title">나만의 맞춤형 펌프시스템</div>
 
     <div style="display:flex; gap:36px; align-items:flex-start; margin:16px 0 32px; flex-wrap:wrap;">
       <figure class="plate spec-figure" style="flex-shrink:0; max-width:260px;">
         <img src="images/pumpsystembs-01.jpg" alt="펌프시스템 제품 사진 — 청색 패키지형 펌프시스템 본체"
              width="177" height="164" loading="lazy"
-             onclick="openCatalog(this.src, '펌프시스템 제품 사진')">
+             tabindex="0" onclick="openCatalog(this.src, '펌프시스템 제품 사진')">
         <figcaption><span>Pump System Business — 01</span><span>클릭하여 확대</span></figcaption>
       </figure>
       <div style="flex:1; min-width:200px;">
@@ -959,7 +959,7 @@
       <figure class="plate spec-figure" style="flex-shrink:0; max-width:300px;">
         <img src="images/pumpsystembs-02.jpg" alt="펌프시스템 적용 현장 — 경기장에서 고압 살수 시연 모습"
              width="161" height="125" loading="lazy"
-             onclick="openCatalog(this.src, '펌프시스템 적용 현장')">
+             tabindex="0" onclick="openCatalog(this.src, '펌프시스템 적용 현장')">
         <figcaption><span>Pump System Business — 02</span><span>클릭하여 확대</span></figcaption>
       </figure>
     </div>
@@ -968,7 +968,7 @@
     <figure class="plate spec-figure">
       <img src="images/pumpsystembs-03.jpg" alt="펌프시스템 구조도 — HPPS 2000 모델 실물 사진 및 각도별 치수 도면"
            width="690" height="350" loading="lazy" style="width:100%; max-width:800px; margin-inline:auto;"
-           onclick="openCatalog(this.src, '펌프시스템 구조도 · HPPS 2000')">
+           tabindex="0" onclick="openCatalog(this.src, '펌프시스템 구조도 · HPPS 2000')">
       <figcaption><span>Pump System Business — 03</span><span>클릭하여 확대</span></figcaption>
     </figure>
   </div>
@@ -984,13 +984,12 @@
       <div class="rule"></div>
     </div>
   </div>
-  <div class="content-wrap wide">
-    <div class="sec-title">제품사진</div>
+  <div class="section container">
     <div class="gallery-tabs">
-      <div class="gallery-tab active" onclick="switchGalleryTab(this,'rb')">링블로워</div>
-      <div class="gallery-tab" onclick="switchGalleryTab(this,'pump')">고압피스톤펌프</div>
-      <div class="gallery-tab" onclick="switchGalleryTab(this,'washer')">세척기</div>
-      <div class="gallery-tab" onclick="switchGalleryTab(this,'sys')">고압펌프시스템</div>
+      <div class="gallery-tab active" tabindex="0" onclick="switchGalleryTab(this,'rb')">링블로워</div>
+      <div class="gallery-tab" tabindex="0" onclick="switchGalleryTab(this,'pump')">고압피스톤펌프</div>
+      <div class="gallery-tab" tabindex="0" onclick="switchGalleryTab(this,'washer')">세척기</div>
+      <div class="gallery-tab" tabindex="0" onclick="switchGalleryTab(this,'sys')">고압펌프시스템</div>
     </div>
     <div id="gallery-rb"     class="gallery-panel active"></div>
     <div id="gallery-pump"   class="gallery-panel"></div>
@@ -1017,16 +1016,16 @@
       <div class="rule"></div>
     </div>
   </div>
-  <div class="content-wrap">
+  <div class="section container">
     <div class="sec-title">자주 묻는 질문</div>
     <div class="faq-tabs">
-      <div class="faq-tab active" onclick="switchTab(this,'tech')">기술문의</div>
-      <div class="faq-tab" onclick="switchTab(this,'buy')">구입문의</div>
-      <div class="faq-tab" onclick="switchTab(this,'as')">A/S 문의</div>
+      <div class="faq-tab active" tabindex="0" onclick="switchTab(this,'tech')">기술문의</div>
+      <div class="faq-tab" tabindex="0" onclick="switchTab(this,'buy')">구입문의</div>
+      <div class="faq-tab" tabindex="0" onclick="switchTab(this,'as')">A/S 문의</div>
     </div>
     <div id="faq-tech" class="faq-panel active">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">피스톤펌프(DHS1)을 사용시 물을 흡입할 때는 어떤 방법으로 하나요?</div>
+        <div class="faq-q" tabindex="0" onclick="toggleFaq(this)">피스톤펌프(DHS1)을 사용시 물을 흡입할 때는 어떤 방법으로 하나요?</div>
         <div class="faq-a">
           1. 수도나 급수펌프에 연결 사용하면 제 성능을 충분히 발휘합니다. (권장 사항입니다.)<br>
           2. 물 탱크에 담아진 물을 뽑아 쓸 경우 물 탱크의 물 높이가 펌프보다 높아야 합니다.<br>
@@ -1034,7 +1033,7 @@
         </div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">링블로워 설치 시 주의사항이 있나요?</div>
+        <div class="faq-q" tabindex="0" onclick="toggleFaq(this)">링블로워 설치 시 주의사항이 있나요?</div>
         <div class="faq-a">
           링블로워는 실내 설치가 가능하며, 저소음 설계로 다양한 환경에 적합합니다. 설치 전 전문 기술자와 상담 후 진행하시기 바랍니다. 자세한 내용은 032-567-9087로 문의해 주세요.
         </div>
@@ -1042,7 +1041,7 @@
     </div>
     <div id="faq-buy" class="faq-panel">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">제품 구매는 어떻게 하나요?</div>
+        <div class="faq-q" tabindex="0" onclick="toggleFaq(this)">제품 구매는 어떻게 하나요?</div>
         <div class="faq-a">
           견적요청 또는 온라인 상담 페이지를 통해 문의하시거나, 대표전화 032-567-9087로 연락 주시면 안내해 드립니다.
         </div>
@@ -1050,7 +1049,7 @@
     </div>
     <div id="faq-as" class="faq-panel">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">A/S 신청은 어떻게 하나요?</div>
+        <div class="faq-q" tabindex="0" onclick="toggleFaq(this)">A/S 신청은 어떻게 하나요?</div>
         <div class="faq-a">
           대표전화 032-567-9087 또는 이메일 master@dhfm.co.kr로 문의해 주시면 신속하게 처리해 드립니다.
         </div>
@@ -1281,12 +1280,12 @@
     <div class="doc measure">
       <h2>복리후생</h2>
       <ul>
-        <li><strong>🏥 건강보험</strong>4대 보험 완비</li>
-        <li><strong>🎂 경조사 지원</strong>경조금 및 경조휴가 제공</li>
-        <li><strong>📚 자기계발</strong>업무 관련 교육 지원</li>
-        <li><strong>🍱 중식 제공</strong>사내 식사 또는 식대 지원</li>
-        <li><strong>🏖 연차휴가</strong>법정 연차 보장</li>
-        <li><strong>🎁 명절 선물</strong>명절 선물 지급</li>
+        <li><strong>🏥 건강보험</strong> 4대 보험 완비</li>
+        <li><strong>🎂 경조사 지원</strong> 경조금 및 경조휴가 제공</li>
+        <li><strong>📚 자기계발</strong> 업무 관련 교육 지원</li>
+        <li><strong>🍱 중식 제공</strong> 사내 식사 또는 식대 지원</li>
+        <li><strong>🏖 연차휴가</strong> 법정 연차 보장</li>
+        <li><strong>🎁 명절 선물</strong> 명절 선물 지급</li>
       </ul>
     </div>
   </div>
@@ -1563,7 +1562,7 @@ function buildGallery(key) {
   const items = galleryData[key].images;
   panel.innerHTML = '<div class="gallery-grid">' +
     items.map((img, i) =>
-      `<div class="gallery-item" onclick="openLightbox('${key}',${i})">` +
+      `<div class="gallery-item" tabindex="0" onclick="openLightbox('${key}',${i})">` +
       `<img src="${img.src}" alt="${img.caption}" loading="lazy"></div>`
     ).join('') +
   '</div>';
@@ -1627,6 +1626,13 @@ buildGallery('rb');
 
 // 히어로 각인 모션은 최초 로드 1회만 — 재생 완료 후 봉인
 setTimeout(() => document.getElementById('page-home').classList.add('engraved'), 700);
+
+// 키보드 활성화 — tabindex 부여된 onclick 요소에서 Enter/Space를 클릭으로
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('[tabindex="0"][onclick]')) {
+    e.preventDefault(); e.target.click();
+  }
+});
 </script>
 
 <!-- 네이버 지도 API: ncpClientId를 발급받은 키로 교체하세요 -->
