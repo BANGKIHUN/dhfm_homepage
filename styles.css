@@ -325,6 +325,7 @@ body { padding-top: var(--header-h); }
   text-transform: uppercase; color: var(--iron);
   padding: 10px var(--pad); border-top: 1px solid var(--machined);
   display: flex; justify-content: space-between; gap: 12px;
+  flex-wrap: wrap; /* 좁은 프레임에서 라벨이 글자 단위로 세로 쌓이는 것 방지 — 줄 단위로 개행 */
 }
 @media (max-width: 860px) { .prod-detail { grid-template-columns: 1fr; } }
 
@@ -337,6 +338,18 @@ body { padding-top: var(--header-h); }
 .lightbox--single .lightbox-prev, .lightbox--single .lightbox-next { display: none; }
 
 /* ══════ 10. T3 사업분야 ══════ */
+/* 사진-본문 흐름 배치 — 본문이 사진 옆을 채우고 남으면 아래로 감아 돌아
+   창 폭이 달라져도 사진 높이만큼의 빈 공간이 생기지 않는다 */
+.figure-flow::after { content: ""; display: block; clear: both; }
+.figure-flow .spec-figure { float: right; margin: 0 0 14px 28px; width: fit-content; }
+.figure-flow--left .spec-figure { float: left; margin: 0 28px 14px 0; }
+.figure-text .body-text { max-width: none; }
+@media (max-width: 700px) {
+  .figure-flow .spec-figure, .figure-flow--left .spec-figure {
+    float: none; margin: 16px 0 0;
+  }
+}
+
 .sec-title {
   font-family: var(--font-display); font-weight: 800; text-transform: uppercase;
   font-size: 1.15rem; letter-spacing: 0.02em;
