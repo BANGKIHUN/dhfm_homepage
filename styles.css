@@ -137,7 +137,7 @@ img { max-width: 100%; height: auto; display: block; }
   max-width: 1180px; margin-inline: auto; padding-inline: var(--pad);
 }
 .logo { text-decoration: none; display: flex; flex-direction: column; line-height: 1.15; }
-.logo__ko { font-weight: 600; font-size: 1.05rem; letter-spacing: -0.02em; }
+.logo__ko { font-weight: 700; font-size: 1.3rem; letter-spacing: -0.02em; }
 .logo__en { font-size: 0.6rem; letter-spacing: 0.2em; color: var(--iron); }
 
 .nav { display: flex; align-items: center; gap: 4px; }
